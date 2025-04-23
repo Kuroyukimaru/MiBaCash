@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtStatus = new System.Windows.Forms.TextBox();
-            this.txtDeskripsi = new System.Windows.Forms.TextBox();
-            this.txtKategori = new System.Windows.Forms.TextBox();
             this.txtHarga = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,11 +36,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNamaMenu = new System.Windows.Forms.TextBox();
+            this.txtKategori = new System.Windows.Forms.TextBox();
+            this.txtDeskripsi = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMenu)).BeginInit();
             this.SuspendLayout();
@@ -73,30 +74,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(556, 224);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // txtStatus
-            // 
-            this.txtStatus.Location = new System.Drawing.Point(153, 182);
-            this.txtStatus.Multiline = true;
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(400, 39);
-            this.txtStatus.TabIndex = 9;
-            // 
-            // txtDeskripsi
-            // 
-            this.txtDeskripsi.Location = new System.Drawing.Point(153, 138);
-            this.txtDeskripsi.Multiline = true;
-            this.txtDeskripsi.Name = "txtDeskripsi";
-            this.txtDeskripsi.Size = new System.Drawing.Size(400, 38);
-            this.txtDeskripsi.TabIndex = 8;
-            // 
-            // txtKategori
-            // 
-            this.txtKategori.Location = new System.Drawing.Point(153, 96);
-            this.txtKategori.Multiline = true;
-            this.txtKategori.Name = "txtKategori";
-            this.txtKategori.Size = new System.Drawing.Size(400, 36);
-            this.txtKategori.TabIndex = 7;
             // 
             // txtHarga
             // 
@@ -159,9 +136,33 @@
             this.txtNamaMenu.Size = new System.Drawing.Size(400, 39);
             this.txtNamaMenu.TabIndex = 5;
             // 
+            // txtKategori
+            // 
+            this.txtKategori.Location = new System.Drawing.Point(153, 96);
+            this.txtKategori.Multiline = true;
+            this.txtKategori.Name = "txtKategori";
+            this.txtKategori.Size = new System.Drawing.Size(400, 36);
+            this.txtKategori.TabIndex = 7;
+            // 
+            // txtDeskripsi
+            // 
+            this.txtDeskripsi.Location = new System.Drawing.Point(153, 138);
+            this.txtDeskripsi.Multiline = true;
+            this.txtDeskripsi.Name = "txtDeskripsi";
+            this.txtDeskripsi.Size = new System.Drawing.Size(400, 38);
+            this.txtDeskripsi.TabIndex = 8;
+            // 
+            // txtStatus
+            // 
+            this.txtStatus.Location = new System.Drawing.Point(153, 182);
+            this.txtStatus.Multiline = true;
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(400, 39);
+            this.txtStatus.TabIndex = 9;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(674, 37);
+            this.button1.Location = new System.Drawing.Point(674, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(90, 39);
             this.button1.TabIndex = 1;
@@ -171,7 +172,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(674, 102);
+            this.button2.Location = new System.Drawing.Point(674, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 38);
             this.button2.TabIndex = 2;
@@ -181,7 +182,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(674, 162);
+            this.button3.Location = new System.Drawing.Point(674, 127);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 38);
             this.button3.TabIndex = 3;
@@ -191,7 +192,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(674, 223);
+            this.button4.Location = new System.Drawing.Point(674, 175);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 35);
             this.button4.TabIndex = 4;
@@ -209,11 +210,22 @@
             this.dgvMenu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMenu_CellClick);
             this.dgvMenu.Click += new System.EventHandler(this.dgvMenu_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(674, 223);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(90, 35);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Kembali";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.BtnKembali);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.dgvMenu);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -247,5 +259,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dgvMenu;
+        private System.Windows.Forms.Button button5;
     }
 }

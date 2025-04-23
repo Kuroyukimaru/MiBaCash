@@ -38,6 +38,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dgvTransaksi = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaksi)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +52,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtTotalHarga, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 52);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 61);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -95,9 +96,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(651, 42);
+            this.button1.Location = new System.Drawing.Point(634, 42);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(92, 32);
             this.button1.TabIndex = 1;
             this.button1.Text = "Tambah";
             this.button1.UseVisualStyleBackColor = true;
@@ -105,9 +106,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(651, 93);
+            this.button2.Location = new System.Drawing.Point(634, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(92, 32);
             this.button2.TabIndex = 2;
             this.button2.Text = "Hapus";
             this.button2.UseVisualStyleBackColor = true;
@@ -115,9 +116,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(651, 147);
+            this.button3.Location = new System.Drawing.Point(634, 118);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(92, 32);
             this.button3.TabIndex = 3;
             this.button3.Text = "Ubah";
             this.button3.UseVisualStyleBackColor = true;
@@ -125,9 +126,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(651, 203);
+            this.button4.Location = new System.Drawing.Point(634, 156);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(92, 32);
             this.button4.TabIndex = 4;
             this.button4.Text = "Refresh";
             this.button4.UseVisualStyleBackColor = true;
@@ -142,11 +143,22 @@
             this.dgvTransaksi.TabIndex = 5;
             this.dgvTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTransaksi_CellClick);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(634, 194);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(92, 32);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Kembali";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.BtnKembali);
+            // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.dgvTransaksi);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -174,5 +186,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dgvTransaksi;
+        private System.Windows.Forms.Button button5;
     }
 }

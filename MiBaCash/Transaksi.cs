@@ -162,5 +162,12 @@ namespace MiBaCash
                 txtMetodePembayaran.Text = row.Cells["metode_pembayaran"].Value.ToString();
             }
         }
+
+        private void BtnKembali(object sender, EventArgs e)
+        {
+            this.Hide(); // Sembunyikan form Menu
+            Form1 formUtama = new Form1(); // Ganti dengan nama form yang dimaksud
+            formUtama.Show();
+        }
     }
 }

@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtAlamatDistributor = new System.Windows.Forms.TextBox();
+            this.txtKontakDistributor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNamaDistributor = new System.Windows.Forms.TextBox();
-            this.txtKontakDistributor = new System.Windows.Forms.TextBox();
-            this.txtAlamatDistributor = new System.Windows.Forms.TextBox();
             this.Tambah = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dgvDistributor = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDistributor)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtNamaDistributor, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 47);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(22, 39);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -63,6 +64,22 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(588, 190);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // txtAlamatDistributor
+            // 
+            this.txtAlamatDistributor.Location = new System.Drawing.Point(297, 129);
+            this.txtAlamatDistributor.Multiline = true;
+            this.txtAlamatDistributor.Name = "txtAlamatDistributor";
+            this.txtAlamatDistributor.Size = new System.Drawing.Size(288, 57);
+            this.txtAlamatDistributor.TabIndex = 5;
+            // 
+            // txtKontakDistributor
+            // 
+            this.txtKontakDistributor.Location = new System.Drawing.Point(297, 66);
+            this.txtKontakDistributor.Multiline = true;
+            this.txtKontakDistributor.Name = "txtKontakDistributor";
+            this.txtKontakDistributor.Size = new System.Drawing.Size(288, 57);
+            this.txtKontakDistributor.TabIndex = 4;
             // 
             // label1
             // 
@@ -99,25 +116,9 @@
             this.txtNamaDistributor.Size = new System.Drawing.Size(288, 57);
             this.txtNamaDistributor.TabIndex = 3;
             // 
-            // txtKontakDistributor
-            // 
-            this.txtKontakDistributor.Location = new System.Drawing.Point(297, 66);
-            this.txtKontakDistributor.Multiline = true;
-            this.txtKontakDistributor.Name = "txtKontakDistributor";
-            this.txtKontakDistributor.Size = new System.Drawing.Size(288, 57);
-            this.txtKontakDistributor.TabIndex = 4;
-            // 
-            // txtAlamatDistributor
-            // 
-            this.txtAlamatDistributor.Location = new System.Drawing.Point(297, 129);
-            this.txtAlamatDistributor.Multiline = true;
-            this.txtAlamatDistributor.Name = "txtAlamatDistributor";
-            this.txtAlamatDistributor.Size = new System.Drawing.Size(288, 57);
-            this.txtAlamatDistributor.TabIndex = 5;
-            // 
             // Tambah
             // 
-            this.Tambah.Location = new System.Drawing.Point(667, 38);
+            this.Tambah.Location = new System.Drawing.Point(667, 23);
             this.Tambah.Name = "Tambah";
             this.Tambah.Size = new System.Drawing.Size(96, 37);
             this.Tambah.TabIndex = 1;
@@ -127,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(667, 91);
+            this.button1.Location = new System.Drawing.Point(667, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 37);
             this.button1.TabIndex = 2;
@@ -137,7 +138,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(667, 145);
+            this.button2.Location = new System.Drawing.Point(667, 110);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 37);
             this.button2.TabIndex = 3;
@@ -147,7 +148,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(667, 200);
+            this.button3.Location = new System.Drawing.Point(667, 153);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(96, 37);
             this.button3.TabIndex = 4;
@@ -164,11 +165,22 @@
             this.dgvDistributor.TabIndex = 5;
             this.dgvDistributor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDistributor_CellClick);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(667, 196);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(96, 37);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Kembali";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.BtnKembali);
+            // 
             // Distributor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.dgvDistributor);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -198,5 +210,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dgvDistributor;
+        private System.Windows.Forms.Button button4;
     }
 }

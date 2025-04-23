@@ -147,5 +147,12 @@ namespace MiBaCash
                 txtStatus.Text = row.Cells["status"].Value.ToString();
             }
         }
+
+        private void BtnKembali(object sender, EventArgs e)
+        {
+            this.Hide(); // Sembunyikan form Menu
+            Form1 formUtama = new Form1(); // Ganti dengan nama form yang dimaksud
+            formUtama.Show();
+        }
     }
 }
