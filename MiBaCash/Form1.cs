@@ -21,7 +21,7 @@ namespace MiBaCash
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Font = new Font("Arial", 18, FontStyle.Bold);
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
